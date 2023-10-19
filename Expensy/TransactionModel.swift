@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import SwiftUIFontIcon
 
-struct Transaction: Identifiable { // Indetifiable mean every Transaction is unique with unique ID
+struct Transaction: Identifiable, Decodable, Hashable { // Indetifiable mean every Transaction is unique with unique ID
     let id: Int 
     let date: String
     let institution: String
@@ -34,4 +35,17 @@ struct Transaction: Identifiable { // Indetifiable mean every Transaction is uni
 enum TransactionType: String {
     case debit = "Debit"
     case credit = "Credit"
+}
+ 
+struct Category {
+    let id: Int
+    let name: String
+    let icon: FontAwesomeCode
+    var mainCategoryId: Int?
+}
+
+extension Category {
+    static let clothing = Category(id: 1, name: "Clothing", icon: .tshirt)
+    static let computers = Category(id: 1, name: "Computers", icon: .icons)
+    
 }

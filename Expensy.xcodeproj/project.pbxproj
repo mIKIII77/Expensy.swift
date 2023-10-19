@@ -17,6 +17,7 @@
 		137602462AD86DF100A6A587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137602452AD86DF100A6A587 /* Assets.xcassets */; };
 		137602492AD86DF100A6A587 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137602482AD86DF100A6A587 /* Preview Assets.xcassets */; };
 		13D276B62ADC2C530080F31F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D276B52ADC2C530080F31F /* Extensions.swift */; };
+		13DFE47B2AE1B62200A96F69 /* RecentTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DFE47A2AE1B62200A96F69 /* RecentTransactionList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		137602452AD86DF100A6A587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		137602482AD86DF100A6A587 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		13D276B52ADC2C530080F31F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		13DFE47A2AE1B62200A96F69 /* RecentTransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			children = (
 				1331F1932ADC84F2008C2185 /* TransactionRow.swift */,
 				1331F1982ADC8C58008C2185 /* TransactionListViewModel.swift */,
+				13DFE47A2AE1B62200A96F69 /* RecentTransactionList.swift */,
 				13D276B52ADC2C530080F31F /* Extensions.swift */,
 				137602412AD86DF000A6A587 /* ExpensyApp.swift */,
 				1331F18F2ADC81D5008C2185 /* TransactionModel.swift */,
@@ -161,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1331F1922ADC83BD008C2185 /* PreviewData.swift in Sources */,
+				13DFE47B2AE1B62200A96F69 /* RecentTransactionList.swift in Sources */,
 				1331F1902ADC81D5008C2185 /* TransactionModel.swift in Sources */,
 				137602442AD86DF000A6A587 /* ContentView.swift in Sources */,
 				1331F1942ADC84F2008C2185 /* TransactionRow.swift in Sources */,

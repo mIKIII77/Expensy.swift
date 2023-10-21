@@ -19,7 +19,7 @@ struct TransactionRow: View {
                 .fill(Color.icon.opacity(0.3))
                 .frame(width: 44, height: 44)
                 .overlay {
-                    FontIcon.text(.awesome5Solid(code: .icons), fontsize: 24, color: Color.icon)
+                    FontIcon.text(.awesome5Solid(code:  transaction.icon), fontsize: 24, color: Color.icon)
                 }
             
             VStack (alignment: .leading, spacing: 6) {
@@ -48,7 +48,7 @@ struct TransactionRow: View {
             Text(transaction.signedAmount, format: .currency(code: "EUR"))
                 .bold()
                 .foregroundColor(transaction.type == TransactionType.credit.rawValue ?
-                                 Color.text : .primary)
+                                 Color.icon : .primary)
             }
         .padding([.top, .bottom], 8) // Add padding to the top and bottom of the row
     }

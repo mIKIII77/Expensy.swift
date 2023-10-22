@@ -65,11 +65,11 @@ final class TransactionListViewModel: ObservableObject {
         print("AccumulateTransactions")
         guard !transactions.isEmpty else { return [] }
         
-        let today = "30/01/2023".dateParsed() // Date()
+        let today = "28/01/2023".dateParsed() // Date()
         let dateInterval = Calendar.current.dateInterval(of: .month, for: today)!
         print("dateInterval", dateInterval)
         
-        var sum: Double = .zero
+        var sum: Double = 500
         var cumulativeSum = TransactionPrefixSum()
         
         for date in stride(from: dateInterval.start, to: today, by: 60 * 60 * 24) {

@@ -31,14 +31,14 @@ struct ContentView: View {
                         CardView {
                             VStack(alignment: .leading) { // Leading alignment to display the amount correctly in the top left corner, instead of the middle, when using the chart."
                                     ChartLabel(totalExpenses.formatted(.currency(code: "EUR")), type: .title, format: "€%.02f")
-                                LineChart()
+                                LineChart() 
                             }
-                            .background(Color.systemBackground) //Fix background color of chart
+                            .background(Color.foreground) //Fix background color of chart
                         }
                         .data(data)
-                        .chartStyle(ChartStyle(backgroundColor: Color.systemBackground,
+                        .chartStyle(ChartStyle(backgroundColor: Color.foreground,
                                     foregroundColor: ColorGradient(Color.Icon.opacity(0.4), Color.Icon)))
-                        .frame(height: 300)
+                        .frame(height: 400)
                         
                     }
                     
